@@ -1,0 +1,30 @@
+This is a script that I created because I was getting excessively pissed off at the lack of decent coordinate mappers for images.
+
+It's not perfect, but it's better than like 90% of options out there.
+
+And hey, it's open source, so if you want to make it better, post a commit.
+
+Here's how it works.
+
+1) Throw an image in the directory, modify the script as needed to load the right image. (I have a sample image in there for demo purposes).
+
+2) Run the script in Corona SDK Simulator, click within the image to set coordinates.
+
+3) The white bounding box shows you where your image ends (helpful for transparent images)
+
+4) After the second click, you'll start seeing lines show up to track your progress
+
+5) Every time you click, a LUA table formatted list of coordinates is spit out to Corona SDK Terminal
+
+6) Enjoy!
+
+
+Features That Probably Need to Be Developed
+
+* Zoom in on image (for small hard to see images and fine boundaries)
+
+* Selectable/deletable coordinates
+
+* Support for images larger than the sim screen (maybe? Might be good for terrain mapping)
+
+Eventually I will create a legitimate desktop version of the same concept with better features (such as one where you don't need to constantly modify the source to make it load the right image). But until then, it was driving me batshit insane trying to eyeball these coordinates in photoshop or using the horrible 15 year old mappers floating around the web.
